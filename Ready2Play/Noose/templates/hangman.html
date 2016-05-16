@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta  content="text/html; charset=windows-1252"  http-equiv="content-type">
+    <title>Hangman</title>
+  </head>
+  <body>
+    <form   method="POST" action="/hangman"> 
+	Secret &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+	<input  name="doNotCare" value=" {{ secret }} "  readonly="readonly"  size="30"  type="text">
+	<br>
+     	Feedback&nbsp; 
+	<input  name="feedback"  value="{{ feedback }}"  readonly="readonly" size="30"  type="text">
+      	<hr>
+	<input  name="secretWord"  value="{{ secretWord }}"  hidden type="text">
+	<input  name="guesses"  value="{{ guesses }}"  hidden  type="text">
+
+	{% for letr in "ABCDEFGHI" %} 
+		{% if letr in guesses %} 
+			<input name="letter"  value="{{ letr }}"  disabled="disabled"  type="submit">
+            	{% else %}
+            		<input  name="letter"  value="{{ letr }}"  type="submit">
+            	{% endif %}
+      	{% endfor %}
+	<br>
+	{% for letr in "JKLMNOPQR" %} 
+		{% if letr in guesses %} 
+			<input name="letter"  value="{{ letr }}"  disabled="disabled"  type="submit">
+            	{% else %}
+            		<input  name="letter"  value="{{ letr }}"  type="submit">
+            	{% endif %}
+      	{% endfor %}
+	<br>
+	{% for letr in "STUVWXYZ" %} 
+		{% if letr in guesses %} 
+			<input name="letter"  value="{{ letr }}"  disabled="disabled"  type="submit">
+            	{% else %}
+            		<input  name="letter"  value="{{ letr }}"  type="submit">
+            	{% endif %}
+      	{% endfor %}
+	<input name="letter"  value="New"  type="submit">
+	<hr>   
+	</form>
+   </body>
+</html>
