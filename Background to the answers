@@ -1,1 +1,143 @@
+I have this message from a student claiming to representing a group.
 
+
+In endsem, you gave us paragraph based questions which were highly interrelated. If one makes a mistake in one part, he is likely to carry forward that to all other parts. 7-8 questions were interlinked like this which means if you are not able to catch few things, you are likely to score 0 out of 15 in 40 marks paper.
+
+The hangman question in endsem had many problems and errors. Many students never came to know that the initial page and the page after first click were different as the second url was mentioned only once that too in the screenshot. Many students left that question unattempted thinking it was impossible. Some question had one line answer while some required one page long answers but carried equal equal weightage.
+
+
+I determine the views incorrect and in need of reasoned denial.
+
+
+1. The accused inter-question locking is very small if it exists.
+
+
+2. The questions are constructed to help students. I do not see any imposition on student's coding style.
+
+
+3. The students need to understand that examinations in which they carry nearly unrestricted support material can not be their traditional cut-and-paste examination. They need to show comprehension and maturity.
+
+
+Below you will find my comments for each of the question in section highlighted by the student.
+
+
+Question 08:
+
+Identify all variables that would be needed to properly render the html/jinja2 template in preparation for its display in a browser.
+
+
+Write Python code to assign initial values to these variables. This code is run when the game is first accessed by a player using URL: localhost:5000/hangman. It is also run when button new is clicked by the player to start a new game.
+
+
+Calling spade a spade:
+
+The picture presented of the game, clearly indicate that the following values need to be stored:
+
+1. Secret (for display in a text field)
+
+2. Feedback (again from display's picture): it is also obvious that the future feedbacks will be based on the past feedbacks together with result of each action.
+
+3. As http protcol is built only on request-response cycle with no memory in the server, the secretWord also need to rendered but hidden.
+
+4. There is one more value that we need to preserve. As each letter is guessed only once we need to remember the past guesses.
+
+
+The student need to show ability to comprehend the problem and identify the primary needs of the solution. It is possible that some students will learn the need for certain hidden values later as they answer other question. Your answer page has a lot of space to include these values.
+
+
+
+
+Question 09:
+
+Consider a html/jinja2 template that would be needed to render the game status on the browser. This is a large document, therefore the questions here are related to only the specific parts in this template.
+
+
+Write a complete tag line <form>, with all necessary attributes (and values) for an implementation of this game.
+
+
+Calling spade a spade:
+
+As you determine a single line answer for the question, you are made aware that the server application has two core functions.
+
+1. A function that does not need to read the form. It simple sets the variables to fixed values. This part is question 8.
+
+2. A function that needs to read the form and act based on the contents in the form.
+
+
+
+
+Question 10:
+
+Write a render_template call showing all keyword parameters that would create the response html document ready for return to the requesting browser. Also write the related import statements needed in the module.
+
+
+Calling spade a spade:
+
+I think it is simple free mark question.
+
+
+Question 11:
+
+Provide html/jinja2 template code that would (a) correctly display the text boxes labelled as Secret and Feedback, and (b) embed the hidden values necessary to extract the status of the game when form is submitted back to the server application (that is, to a function(s) implementing the game of hangman).
+
+
+You need only write the part of the template code that directly relates to these form elements. Do not write any part of the template enclosing these lines.
+
+
+Calling spade a spade:
+
+Testing your ability to write some Jinja/html code. This question is primarily on html skills. Next question is more on jinja skills.
+
+
+With support material this tasks cannot be called difficult. The material needed was covered in the class lectures and a lab session.
+
+
+
+Question 12:
+
+Write html/jinja2 template code to display all nine buttons in the middle row of the buttons.
+
+
+Your code should correctly display the buttons in their correct modes: the letters that have already been selected/guessed by the player are rendered as disabled buttons. The buttons for not-yet-selected letters are the submit buttons.
+
+
+Calling spade a spade:
+
+If you missed fully listin values to be preserved in question 8, here you are being prompted to correct that.
+
+
+The question tests your learning of jinja2 (you have your notes).
+
+
+Question 13:
+
+Write Python/Flask code to extract the values from the submitted form and assign these extracted values to the correct variables in Python program in preparation for servicing the received request from the player’s browser. (A form is received, at the hangman server/application, when the player clicks a submit button in the browser while playing the game.)
+
+
+Calling spade a spade:
+
+The question is again tested a single skill: your ability to read a html form. Only dependence that exists here is on question 8. Most of the fields in question 8 are obvious.
+
+
+Question 14:
+
+Write Python code using the variables set in your answer to Question 13, to determine the classification of the letter selected by the player. The three classifications of interest are: (a) the selected letter is a letter in secretWord, (b) the selected letter causes a single-point penalty, or (c) the selected letter causes a two-point penalty.
+
+
+Calling spade a spade:
+
+Again the question is a stand alone exercise, preparion you for the next question.
+
+
+
+Question 15:
+
+Write Python code, using the variables used in the answers to Questions 13 and 14, to compute the new values for variables necessary to call render_template method (For example, refer to Question 10).
+
+
+Calling spade a spade:
+
+I do not see this question as anything but a simple programming task. Nor do I see any constraint being imposed on the students by me on the code style.
+
+
+The web technology does impose a requirement that the output going form has the same structure as the incoming form.
