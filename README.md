@@ -1,5 +1,5 @@
 # Intro-Flask-Python
-This is an an introduction of Flask frame work of Python for ex programmers. A degree of comfort in programming is needed though knowledge of Python is not needed.
+This is an introduction of Flask frame work of Python for ex programmers. A degree of comfort in programming is needed though knowledge of Python is not needed.
 
 The exercise is based on an examination question, I used at IIT, BHU in a first year course on bash and Python.
 
